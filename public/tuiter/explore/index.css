@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: white;
-    font-family: "Noto Sans";
+    font-family: "Noto Sans", serif;
 
 }
 
@@ -10,14 +10,14 @@ body {
     margin: 16px;
 }
 
-.wd-search-bar{
+.wd-explore-search-bar{
     clear: both;
     display: flex;
     justify-content: space-around;
     margin: 16px;
 }
 
-.wd-search-bar-input{
+.wd-explore-search-bar-input{
     background: rgb(47, 51, 54);
     width: 100%;
     border: 0;
@@ -28,83 +28,82 @@ body {
     height: 30px;
 }
 
-.wd-search-bar-input::placeholder{
+.wd-explore-search-bar-input::placeholder{
     color: lightgray;
 }
 
-.wd-navigation-bar{
+.wd-explore-navigation-bar{
     position: relative;
     display: table;
 }
 
-.wd-navigation-tab-div{
+.wd-explore-navigation-tab-div{
     display: table-cell;
     position: relative;
     padding: 16px 16px 0px 16px;
     height: 40px
 }
 
-.wd-navigation-tab-div:hover {
+.wd-explore-navigation-tab-div:hover {
     background: rgb(47, 51, 54);
 }
 
-.wd-nav-text-wrapper {
+.wd-explore-navigation-text-wrapper {
     position: relative;
 }
 
-.wd-nav-div-underline {
+.wd-explore-navigation-div-underline {
     border-bottom: 4px solid rgb(29, 161, 242);
     border-radius: 2px;
     height: 90%;
     position: relative;
 }
 
-.wd-nav-text-highlighted {
+.wd-explore-navigation-text-highlighted {
     font-size: 15px;
     font-weight: 800;
     text-decoration: none;
     color: rgb(29, 161, 242)
 }
 
-.wd-nav-text {
+.wd-explore-navigation-text {
     font-size: 15px;
     font-weight: 800;
     text-decoration: none;
     color: rgb(110, 118, 125)
 }
 
-.wd-nav-selected-div {
+.wd-explore-navigation-selected-div {
     background-color: rgb(29, 161, 242);
 }
 
-.wd-thick-sep {
+.wd-thick-line {
     width: 100%;
     height: 15px;
     background-color: rgb(47, 51, 54);
 }
 
-.wd-thin-sep {
+.wd-thin-line {
     width: 100%;
     height: 1px;
     background-color: rgb(47, 51, 54);
 }
 
-.wd-post {
+.wd-explore-post {
     position: relative;
     height: 140px;
     margin-left: 16px;
 }
 
-.wd-post-subtitle {
+.wd-bookmark-post-subtitle {
     font-size: 13px;
     color: rgb(110, 118, 125);
     display: flex;
     margin: 16px 0 0 0;
-    display: inline-block;
     justify-content: space-between;
 }
 
-.wd-post-title {
+.wd-bookmark-post-title {
     font-size: 15px;
     font-weight: 800;
     color: white;
@@ -113,7 +112,7 @@ body {
     justify-content: space-between;
 }
 
-.wd-post-stats {
+.wd-explore-post-stats {
     font-size: 13px;
     color: rgb(110, 118, 125);
     display: flex;
@@ -121,13 +120,13 @@ body {
     justify-content: space-between;
 }
 
-.wd-post-subtitle-inline {
+.wd-explore-post-subtitle-inline {
     margin: 16px 0 0;
     justify-content: space-between;
     display: inline-block;
 }
 
-.wd-post-source {
+.wd-explore-post-source {
     font-size: 13px;
     font-weight: bold;
     color: white;
@@ -135,21 +134,21 @@ body {
     justify-content: space-between;
 }
 
-.wd-post-image {
+.wd-explore-post-pic {
     width: 100px;
     height: 100px;
-    border-radius: 15px;
+    border-radius: 16px;
     position: absolute;
     top: 20%;
     right: 16px;
 }
 
-.wd-post-time {
+.wd-explore-post-time {
     font-size: 13px;
     color: rgb(110, 118, 125);
 }
 
-.wd-post-more {
+.wd-explore-post-more {
     float: right;
     position: absolute;
     top: 0;
@@ -160,7 +159,7 @@ body {
     margin: 16px;
 }
 
-.wd-mini-icon {
+.wd-small-image {
     width: 16px;
     height: 16px;
     vertical-align: middle;
