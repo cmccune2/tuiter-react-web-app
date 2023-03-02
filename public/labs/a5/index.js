@@ -179,6 +179,70 @@ const username = "alice";
 const greeting1 = `Welcome home ${username}`;
 console.log(greeting1);
 
+console.log("---------------------------")
+
+console.log("ANSWER:")
+
+const qq = [1, 2, 3, 4, 5]
+const ww = qq.map(a => a === 3 ? 6 : a)
+console.log(ww)
+
+console.log("---------------------------")
+
+console.log("---------------------------")
+
+console.log("ANSWER: 17")
+
+const qqqq = [1, 2, 3, 4, 5]
+const wwww = qqqq.filter(a => a > 2)
+console.log(wwww)
+console.log("---------------------------")
+
+console.log("---------------------------")
+
+console.log("ANSWER: 15")
+/*
+const qwe = 123
+const asd = 234
+const zxc = [321, qwe, 432, asd, 543]
+const [ewq, rew] = zxc
+console.log(ewq)
+console.log(rew)
+console.log("---------------------------")*/
+
+console.log("---------------------------")
+
+console.log("ANSWER: 8")
+
+const qqqqq = ["ewq", "dsa", "qwe", "asd", "zxc"]
+const wwwww = qqqqq.find(a => a === "qwe")
+console.log(wwwww)
+console.log("---------------------------")
+
+console.log("---------------------------")
+
+console.log("ANSWER: 10")
+
+const q = [51, 42, 33, 24, 15]
+const w = q.findIndex(a => a === 24)
+console.log(w)
+console.log("---------------------------")
+
+
+
+console.log("---------------------------")
+
+console.log("ANSWER: 13")
+
+const qwe = { asd: 123, sdf: 234 }
+const zxc = { sdf: 345, ...qwe, asd: 456, zxc: 567 }
+const {sdf, asd } = zxc
+console.log(asd)
+console.log(sdf)
+console.log("---------------------------")
+
+
+
 loggedIn = false;
 const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
 console.log(greeting2);
@@ -278,6 +342,7 @@ const init = () => {
 
 }
 $(init);
+
 
 
 
