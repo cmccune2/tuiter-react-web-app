@@ -7,8 +7,8 @@
     "time" : "23h",
     "title" : "We might need a different name, as this is basically just Starlink with roaming capability, so you can take your terminal anywhere.",
     "card_image" : "rocket.jpeg",
-    "card_title" : "Countdown: Inspiration4 mission to scope | Netflix Official Site ",
-    "card_body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Atque dolores iure, officia pariatur qui quia temporibus veniam voluptas! Adipisci assumenda corporis dicta dolore dolorum hic ipsa placeat rerum! Amet, necessitatibus."
+    "card_title" : "Space news!",
+    "card_body" : "All aboard the orbiting laboratory! The four members of our \n@SpaceX\n #Crew6 mission have entered the \n@space_station\n and were greeted at their welcoming ceremony. Next: a safety briefing and orientation, then the new arrivals are off to catch some sleep."
   },
   {
     "_id" : 345,
@@ -19,6 +19,6 @@
     "title" : "Virgin Galactic has completed improvements to its VSS Unity spaceplane.",
     "card_image" : "vgRocket.jpg",
     "card_title" : "Rocket takes flight!",
-    "card_body" : " "
+    "card_body" : "As we continue towards commercial service, the #VirginGalactic teams are working hard to achieve various milestones to make the dream of spaceflight a reality."
   }
 ]
