@@ -1,24 +1,24 @@
 [
   {
     "_id" : 123,
-    "icon" : "../images/nasa.jpg",
+    "icon" : "../images/spacex.png",
     "topic" : "Elon Musk",
     "handle" : "elonmusk",
     "time" : "23h",
-    "title" : "Amazing show about @Inspiration4x mission!",
-    "card_image" : "inspiration4x.png",
+    "title" : "We might need a different name, as this is basically just Starlink with roaming capability, so you can take your terminal anywhere.",
+    "card_image" : "rocket.jpeg",
     "card_title" : "Countdown: Inspiration4 mission to scope | Netflix Official Site ",
     "card_body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Atque dolores iure, officia pariatur qui quia temporibus veniam voluptas! Adipisci assumenda corporis dicta dolore dolorum hic ipsa placeat rerum! Amet, necessitatibus."
   },
   {
     "_id" : 345,
-    "icon" : "../images/spacex.jpg",
-    "topic" : "New York Post",
-    "handle" : "nypost",
+    "icon" : "../images/vgLogo.svg",
+    "topic" : "Virgin Galactic",
+    "handle" : "virgingalactic",
     "time" : "23h",
-    "title" : "Grimes seen reading Karl Max following split with world's richest man Elon Musk",
-    "card_image" : "reading.jpeg",
-    "card_title" : "Woman reading book",
+    "title" : "Virgin Galactic has completed improvements to its VSS Unity spaceplane.",
+    "card_image" : "vgRocket.jpg",
+    "card_title" : "Rocket takes flight!",
     "card_body" : " "
   }
 ]

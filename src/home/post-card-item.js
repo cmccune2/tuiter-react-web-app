@@ -6,17 +6,18 @@ import {faRetweet} from "@fortawesome/free-solid-svg-icons";
 import {faHeart} from "@fortawesome/free-regular-svg-icons";
 import {faUpload} from "@fortawesome/free-solid-svg-icons";
 
-const postItem = (
+const postCardItem = (
     {
         item =   {
-            "icon" : "apple.jpeg",
+            "_id" : 123,
+            "icon" : "../images/spacex.png",
             "topic" : "Elon Musk",
             "handle" : "elonmusk",
             "time" : "23h",
-            "title" : "Amazing show about <a href='#'>@Inspiration4x</a> mission!",
-            "card_image" : "inspiration4x.png",
+            "title" : "We might need a different name, as this is basically just Starlink with roaming capability, so you can take your terminal anywhere.",
+            "card_image" : "rocket.jpeg",
             "card_title" : "Countdown: Inspiration4 mission to scope | Netflix Official Site ",
-            "card_body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Atque dolores iure, officia pariatur qui quia temporibus veniam voluptas! Adipisci assumenda corporis dicta dolore dolorum hic ipsa placeat rerum! Amet, necessitatibus.",
+            "card_body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Atque dolores iure, officia pariatur qui quia temporibus veniam voluptas! Adipisci assumenda corporis dicta dolore dolorum hic ipsa placeat rerum! Amet, necessitatibus."
         }
     }
 ) => {
@@ -43,16 +44,16 @@ const postItem = (
                 </div>
                 <div className="row mt-3">
                     <div className="col-3 "><FontAwesomeIcon icon={faComment} className="text-secondary"/> <span
-                        className="ms-3">4.2k</span></div>
+                        className="ms-3">11k</span></div>
                     <div className="col-3 "><FontAwesomeIcon icon={faRetweet} className="text-secondary"
                                                              aria-hidden="true"/> <span
-                        className="ms-3">4.2k</span></div>
+                        className="ms-3">24.9k</span></div>
                     <div className="col-3 "><FontAwesomeIcon icon={faHeart} className="text-secondary"/> <span
-                        className="ms-3">4.2k</span></div>
+                        className="ms-3">19.7k</span></div>
                     <div className="col-3 "><FontAwesomeIcon icon={faUpload} className="text-secondary"/></div>
                 </div>
             </div>
         </div>
     );
 };
-export default postItem;
+export default postCardItem;

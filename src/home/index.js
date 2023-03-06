@@ -1,6 +1,6 @@
 import React from "react";
-import postObjects from './post-objects.json';
-import PostItem  from "./post-item";
+import postObjects from './post-card-objects.json';
+import PostItem  from "./post-card-item";
 
 
 const HomePostsList = () => {
