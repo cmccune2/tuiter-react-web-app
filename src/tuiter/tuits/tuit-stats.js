@@ -1,37 +1,51 @@
-import React from "react";
-import {faComment} from "@fortawesome/free-regular-svg-icons";
-import {faHeart} from "@fortawesome/free-regular-svg-icons";
-import {faUpload} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faRetweet} from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import {useDispatch} from "react-redux";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
-const TuitStats = ({ tuit }) => {
+const TuitStats = (
+    tuit = {}) => {
+
+    const dispatch = useDispatch();
+
+    tuit = tuit.tuit;
 
     return (
-        <div className="row">
-            <div className="col">
-                <FontAwesomeIcon icon={faComment}  className="me-2"/>
-                {tuit.replies}
+        <div className="d-flex justify-content-between mt-2 ms-1 pe-5 mb-1 text-muted">
+            <i className="bi bi-chat">
+                <span className="ps-2">
+                    {tuit.replies}
+                </span>
+            </i>
+            <i className="bi bi-shuffle">
+                <span className="ps-2">
+                    {tuit.retuits}
+                </span>
+            </i>
+            <div>
+                <i className="bi bi-heart-fill me-2 text-danger"
+                   onClick={() => dispatch(updateTuitThunk({
+                                                               ...tuit,
+                                                               likes: tuit.likes + 1
+                                                           }))}>
+                    <span className="ps-2">
+                        {tuit.likes}
+                    </span>
+                </i>
             </div>
-            <div className="col">
-                <FontAwesomeIcon icon={faRetweet} className="me-2"
-                                 aria-hidden="true"/>
-                {tuit.retuits}
+            <div>
+                <i className="bi bi-hand-thumbs-down-fill me-2 text-danger"
+                   onClick={() => dispatch(updateTuitThunk({
+                                                               ...tuit,
+                                                               dislikes: tuit.dislikes + 1
+                                                           }))}>
+                    <span className="ps-2">
+                        {tuit.dislikes}
+                    </span>
+                </i>
             </div>
-            <div className="col">
-                {
-                    tuit.liked && <i className="bi bi-heart-fill text-danger me-2"/>
-                }
-                {
-                    !tuit.liked && <FontAwesomeIcon icon={faHeart} className="bi bi-heart me-2"/>
-                }
-                {tuit.likes}
-            </div>
-            <div className="col">
-                <i className="bi bi-share me-2" />
-            </div>
+            <i className="bi bi-share"></i>
         </div>
     );
-};
+}
 
 export default TuitStats;
