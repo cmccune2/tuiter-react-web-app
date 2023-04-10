@@ -3,7 +3,7 @@ import axios from 'axios';
 // const TUITS_API = `${API_BASE}/tuits`;
 
 const API_BASE = process.env.REACT_APP_API_BASE;
-const TUITS_API = `${API_BASE}/tuits`;
+const TUITS_API = `${API_BASE}/api/tuits`;
 
 
 export const createTuit = async (tuit) => {
@@ -11,7 +11,7 @@ export const createTuit = async (tuit) => {
     return response.data;
 }
 
-export const findTuits = async () => {
+export const findTuits  = async() => {
     const response = await axios.get(TUITS_API);
     const tuits = response.data;
     return tuits;
